@@ -1,0 +1,23 @@
+#include <stdio.h>
+int main()
+{
+    int X, i, P = 0;
+    scanf("%d", &X);
+    for (i=2; i<=X; i++)
+    {
+        {
+            if (X%i==0)
+                P++;
+        }
+    }
+    if(P==1)
+
+        printf("YES\n");
+
+    else
+
+        printf("NO\n");
+
+
+    return 0;
+}
