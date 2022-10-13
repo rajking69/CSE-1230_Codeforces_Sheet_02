@@ -1,0 +1,40 @@
+#include<stdio.h>
+int main()
+{
+    int N,r,c;
+    scanf("%d",&N);
+    for(r=1; r<=N; r++)
+    {
+        for(c=1; c<=N-r; c++)
+        {
+            printf(" ");
+        }
+        for(c=1; c<=r; c++)
+        {
+            printf("*");
+        }
+        for(c=r-1; c>=1; c--)
+        {
+            printf("*");
+        }
+        printf("\n");
+    }
+    for(r=N; r>=1; r--)
+    {
+        for(c=1; c<=N-r; c++)
+        {
+            printf(" ");
+        }
+        for(c=1; c<=r; c++)
+        {
+            printf("*");
+        }
+        for(c=r-1; c>=1; c--)
+        {
+            printf("*");
+        }
+        printf("\n");
+    }
+
+    return 0;
+}
