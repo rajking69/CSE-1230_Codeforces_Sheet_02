@@ -1,0 +1,19 @@
+#include<stdio.h>
+int main()
+{
+    long long int i,N,a1,fact=1,j,fact1[21];
+    scanf("%lld",&N);
+    for(i=0; i<N; i++)
+    {
+        scanf("%lld",&a1);
+        for(j=1; j<=a1; j++)
+        {
+            fact=fact*j;
+        }
+        fact1[i]=fact;
+        fact=1;
+    }
+    for(i=0; i<N; i++)
+        printf("%lld\n",fact1[i]);
+    return 0;
+}
