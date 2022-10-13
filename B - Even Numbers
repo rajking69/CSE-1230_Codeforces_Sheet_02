@@ -1,0 +1,12 @@
+#include<stdio.h>
+int main()
+{
+    int N,i;
+    scanf("%d",&N);
+    if(N>=2)
+    for(i=2;i<=N; i=i+2)
+        printf("%d\n",i);
+    else
+    printf("-1\n",i);
+    return 0;
+}
