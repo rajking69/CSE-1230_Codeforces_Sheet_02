@@ -1,0 +1,17 @@
+#include<stdio.h>
+int main()
+{
+    int N,i,m,t;
+    scanf("%d",&N);
+    for(i=1; i<=(N*4); i++)
+    {
+        for(m=1; m<=3; m++)
+        {
+            printf("%d ",i++);
+        }
+        printf("PUM\n");
+
+    }
+
+    return 0;
+}
